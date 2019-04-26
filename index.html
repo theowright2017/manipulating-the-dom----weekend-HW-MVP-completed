@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Highest Mountains per Country</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/app.js">
+    </script>
+  </head>
+  <body>
+    <form id="new-submit-form">
+
+
+        <div class="new-item">
+          <label for="name" class="main">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="new-item">
+          <label for="height" class="main">Height in Meters:</label>
+          <input type="text" id="height" required>
+        </div>
+
+        <div class="new-item">
+          <label for="country" class="main">Country:</label>
+          <input type="text" id="country" required>
+        </div>
+
+        <div class="new-item">
+          <label for="continent" class="main">Continent:</label>
+          <select id="continent">
+            <option value="" disabled selected></option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Australia</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Antarctica">Antarctica</option>
+          </select>
+        </div>
+
+        <div class="new-item">
+          <label for="ascent" class="main">First Ascent:</label>
+          <input type="text" id="ascent" required>
+        </div>
+
+
+      <input type="submit" name="save" value="save">
+
+    </form>
+
+    <button type="button" id="delete_all" name="delete all">Delete All</button>
+
+    <h1>Highest Mountains by Country</h1>
+    <div id="mountain-list">
+      <ul id ="all-new-items">
+        <li id="each-item"></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
