@@ -11,23 +11,24 @@
   <body>
     <form id="new-submit-form">
 
+      <ul class="item-wrapper">
 
-        <div class="new-item">
+        <li class="new-item">
           <label for="name" class="main">Name:</label>
           <input type="text" id="name" required>
-        </div>
+        </li>
 
-        <div class="new-item">
-          <label for="height" class="main">Height in Meters:</label>
+        <li class="new-item">
+          <label for="height" class="main">Height/m:</label>
           <input type="text" id="height" required>
-        </div>
+        </li>
 
-        <div class="new-item">
+        <li class="new-item">
           <label for="country" class="main">Country:</label>
           <input type="text" id="country" required>
-        </div>
+        </li>
 
-        <div class="new-item">
+        <li class="new-item">
           <label for="continent" class="main">Continent:</label>
           <select id="continent">
             <option value="" disabled selected></option>
@@ -38,15 +39,15 @@
             <option value="South America">South America</option>
             <option value="Antarctica">Antarctica</option>
           </select>
-        </div>
+        </li>
 
-        <div class="new-item">
+        <li class="new-item">
           <label for="ascent" class="main">First Ascent:</label>
           <input type="text" id="ascent" required>
-        </div>
+        </li>
+      </ul>
 
-
-      <input type="submit" name="save" value="save">
+      <input type="submit" name="save" value="save" id= "button">
 
     </form>
 

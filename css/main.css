@@ -1,3 +1,36 @@
-#each-item {
+li {
   list-style: none;
+}
+
+#button {
+  width: 5%;
+  justify-content: center;
+}
+
+#new-submit-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.item-wrapper {
+  width: 30%;
+  padding: 0;
+}
+
+.new-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.2em;
+}
+.new-item > label {
+  padding: .1em 1em .1em 0;
+  flex: 1;
+}
+
+.new-item > input {
+  flex: 2;
+}
+
+.new-item > select {
+  width: 65%;
 }

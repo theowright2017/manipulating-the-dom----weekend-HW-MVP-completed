@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset()
   })
 
-  const deleteAll = document.getElementById('delete_all');
+  const deleteAll = document.querySelector('#delete_all');
     deleteAll.addEventListener('click', (event) => {
       event.preventDefault();
-      const parent = document.getElementById('mountain-list');
+      const parent = document.querySelector('#mountain-list');
       while (parent.firstChild) {
         parent.firstChild.remove();
       };
